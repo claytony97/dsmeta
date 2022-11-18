@@ -10,13 +10,13 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import com.devsuperior.dsmeta.entities.Sale;
-import com.devsuperior.dsmeta.repositories.SalesRepository;
+import com.devsuperior.dsmeta.repositories.SaleRepository;
 
 @Service
 public class SaleService {
 
 	@Autowired
-	private SalesRepository repository;
+	private SaleRepository repository;
 	
 	public Page<Sale> findSales(String minDate, String maxDate, Pageable pageable) {
 		
